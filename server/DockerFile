@@ -9,6 +9,6 @@ COPY . .
 
 RUN npx prisma generate
 
-EXPOSE 5000
+EXPOSE 500
 
 CMD ["sh", "-c", "npx prisma migrate deploy && npm start"]
